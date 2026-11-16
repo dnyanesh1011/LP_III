@@ -1,0 +1,83 @@
+Title of the Assignment:
+Implement K-Means Clustering / Hierarchical Clustering on sales_data_sample.csv dataset. Determine the optimal number of clusters using the Elbow Method.
+Dataset Description:
+The case study uses the sales_data_sample.csv dataset, which contains sales transaction records of customers. The dataset includes various attributes such as ORDERNUMBER, QUANTITYORDERED, PRICEEACH, SALES, ORDERDATE, STATUS, PRODUCTLINE, CUSTOMERNAME, COUNTRY, DEALSIZE, etc.
+
+The dataset is used to identify customer or sales patterns by grouping similar records into different clusters using unsupervised machine learning techniques.
+
+Link for Dataset: https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
+Perform the following steps:
+1. Read the dataset using the Pandas library.
+2. Perform data preprocessing by handling missing values and selecting relevant numerical features.
+3. Apply feature scaling using StandardScaler.
+4. Use the Elbow Method to determine the optimal number of clusters.
+5. Implement K-Means clustering on the dataset.
+6. Visualize the clusters using a scatter plot.
+7. Implement Hierarchical Clustering and visualize the results using a dendrogram.
+8. Analyze and compare the clustering results.
+Objective of the Assignment:
+Students should be able to understand and implement unsupervised machine learning techniques such as K-Means and Hierarchical Clustering. Students should also be able to preprocess and scale data, determine the optimal number of clusters using the Elbow Method, and visualize the resulting clusters.
+Prerequisite:
+1. Basic knowledge of Python programming.
+2. Basic knowledge of Machine Learning.
+3. Understanding of data preprocessing and feature scaling.
+4. Basic knowledge of data visualization.
+5. Understanding of clustering techniques.
+Contents of the Theory:
+1. Unsupervised Machine Learning.
+2. K-Means Clustering.
+3. Hierarchical Clustering.
+4. Elbow Method.
+5. Feature Scaling (Standardization).
+6. Euclidean Distance.
+7. Dendrogram.
+8. Data Visualization using Matplotlib and Seaborn.
+Unsupervised Machine Learning:
+Unsupervised Machine Learning is a type of machine learning in which a model learns patterns from data without using predefined output labels. Unlike supervised learning, it does not require a target variable.
+
+It is mainly used to discover hidden patterns, relationships, and groups in datasets.
+
+For example, in sales data, customers or transactions with similar purchasing behavior can be grouped together. This helps businesses understand customer preferences and develop better marketing strategies.
+K-Means Clustering:
+K-Means is an unsupervised machine learning algorithm used to divide a dataset into K different clusters based on similarities between data points.
+
+The algorithm works by calculating the distance between data points and cluster centroids. Each data point is assigned to the nearest centroid.
+
+Steps involved in K-Means:
+1. Select the number of clusters (K).
+2. Initialize K cluster centroids.
+3. Calculate the distance between each data point and the centroids.
+4. Assign each data point to its nearest centroid.
+5. Recalculate the centroids based on the assigned data points.
+6. Repeat the process until the centroids become stable.
+Elbow Method:
+The Elbow Method is used to determine the optimal number of clusters in K-Means clustering.
+
+It calculates the Within-Cluster Sum of Squares (WCSS) for different values of K. The WCSS measures the sum of squared distances between data points and their respective cluster centroids.
+
+A graph is plotted between the number of clusters (K) and WCSS. The point where the decrease in WCSS becomes slower is called the Elbow Point. This point indicates the optimal number of clusters.
+Hierarchical Clustering:
+Hierarchical Clustering is an unsupervised machine learning algorithm used to group similar data points into a hierarchy of clusters.
+
+It creates a tree-like structure called a Dendrogram, which represents the relationship between different clusters.
+
+Types of Hierarchical Clustering:
+
+1. Agglomerative Clustering: It follows a bottom-up approach where each data point starts as an individual cluster. Similar clusters are repeatedly merged until a single cluster or the required number of clusters is obtained.
+
+2. Divisive Clustering: It follows a top-down approach where all data points initially belong to one cluster, which is repeatedly divided into smaller clusters.
+Standardization:
+Standardization is a data preprocessing technique used to bring numerical features to a common scale.
+
+It transforms data so that the mean becomes 0 and the standard deviation becomes 1.
+
+It is important in clustering because features with larger numerical values can dominate distance calculations and affect the clustering results.
+Applications:
+1. Customer segmentation.
+2. Sales pattern analysis.
+3. Product grouping.
+4. Market research.
+5. Customer purchasing behavior analysis.
+6. Business decision-making.
+Result:
+Successfully implemented K-Means and Hierarchical Clustering on the sales_data_sample.csv dataset. Determined the optimal number of clusters using the Elbow Method and visualized the clustering results.
